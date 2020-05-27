@@ -1,0 +1,14 @@
+def count(s):
+    count_vowel =0
+    count_consonant =0
+    count_space =0
+    for i in s:
+        if i in 'AEIOUaeiou':
+            count_vowel+=1
+        elif i not in "AEIOUaeiou" and i not in " " and i not in '0123456789':
+            count_consonant+=1
+        elif i in " ":
+            count_space+=1
+    return count_vowel,count_consonant,count_space
+print (count("weLCOME to py thon"))
+            
