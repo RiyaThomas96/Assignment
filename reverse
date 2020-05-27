@@ -1,0 +1,21 @@
+input="hai hello how are you"
+x=input.split(' ')
+s=len(x)
+print(input)
+value=0
+if s%2:
+     value=1
+else:
+     value=0
+rev_string= ' '
+iterator=s-1
+while iterator>=0:
+     rev_string=rev_string+x[iterator]+' '
+     iterator-=2
+
+
+iterator=value
+while iterator<s:
+     rev_string=rev_string+x[iterator]+' '
+     iterator+=2
+print(rev_string)
